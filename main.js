@@ -13,6 +13,6 @@ const employee =
 console.log(`is Employee? ${employee instanceof Employee}`)
 console.log(`parsed: ${util.inspect(employee)}`)
 
-employee.promote('chief petty grunt', 10)
+employee.promote('chief petty grunt', 10, path.resolve(__dirname, 'employee.json'))
 
 console.log(`after promotion: ${util.inspect(employee)}`)
